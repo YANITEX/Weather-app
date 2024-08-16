@@ -1,0 +1,39 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inpt input{
+    font-size: larger ;
+    padding: 10px 5px;
+    width: 200px;
+}
+
+.inpt button{
+    font-size: larger ;
+    font-weight: bold;
+    background-color: rgb(16, 184, 16);
+    color: white;
+    border: none;
+    padding: 11px 6px;
+    
+}
+
+.inpt button:hover{
+    border: 1px solid black;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    margin-top:50px ;
+    padding: 50px 70px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, rgb(27, 179, 255), rgb(255, 208, 98));
+
+
+}

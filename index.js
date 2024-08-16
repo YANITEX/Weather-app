@@ -5,11 +5,11 @@ const sky = document.getElementById('sky') ;
 const img = document.getElementById('img') ;
 const temp = document.getElementById('tempurature') ;
 const container = document.getElementById('container') ;
+
 async function fetchData(){
     
-    await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputCity.value}&appid=9d100633b0a3c30e200a648384ff5b0d&`)
+    await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputCity.value}&appid=9d100633b0a3c30e200a648384ff5b0d&lang=${document.getElementById('lang').value}`)
                 .then(response =>{
-                    
                     if (!response.ok) {
                         throw new Error(response.statusText);
                     }
